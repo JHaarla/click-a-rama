@@ -1,0 +1,7 @@
+.footer {
+    background-color: #002d39;
+    opacity: .75;
+    background-blend-mode: multiply;
+    color: #ebebeb;
+    height: 2.5rem;
+}
