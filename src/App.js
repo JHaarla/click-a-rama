@@ -19,8 +19,8 @@ function App() {
 
       
       <CharCard 
-        id={Image.id}
-        // key={Image.id}
+        id={img.id}
+        key={img.id}
         imglink={img.imglink}
         />
         ))}

@@ -1,0 +1,23 @@
+.card-container {
+    display: inline-grid;
+    grid-template-columns: repeat (4, 1fr);
+    /* grid-gap: 1rem; */
+}
+
+.card {
+    background: #ebebeb;
+    border-radius: .7rem;
+    margin: 1rem;
+    display: inline-block;
+    padding: .3rem;
+    border: none;
+}
+
+.card > .img-container {
+    height: 100%;
+    cursor: pointer;
+}
+
+.card > .img-container > img {
+    border-radius: .5rem;
+}
