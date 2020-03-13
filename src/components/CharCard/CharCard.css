@@ -14,6 +14,7 @@
     padding: .3rem;
     border: none;
     /* flex-basis: 20%; */
+    transition: all 0.25s;
 
 }
 
@@ -24,4 +25,10 @@
 
 .card > .img-container > img {
     border-radius: .5rem;
+}
+
+.card:hover {
+    /* color: #002d39; */
+    /* opacity: .5; */
+    transform: scale(1.05);
 }
