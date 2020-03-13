@@ -1,4 +1,5 @@
 import React from "react";
+import "./cardWrapper.css";
 
 function CardWrapper(props) {
     return (
