@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import CharCard from "./components/CharCard";
 import characters from "./futurama.json";
 import CardWrapper from "./components/CardWrapper";
+import Message from "./components/Message";
 
 class App extends Component {
 
@@ -58,7 +59,9 @@ class App extends Component {
           highScore={this.state.highScore}
           message={this.state.message}
           />
-
+<Message
+  message={this.state.message}
+   />
         <CardWrapper>
           {characters.map(img => (
 
