@@ -1,0 +1,12 @@
+.message {
+    background-color: #002d39;
+    opacity: .85;
+    background-blend-mode: multiply;
+    color: #ffffff;
+    height: 3.5rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-top: .55rem;
+    margin-bottom: 1rem;
+}
