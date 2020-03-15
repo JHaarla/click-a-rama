@@ -12,7 +12,7 @@ class App extends Component {
   state = {
     characters,
     score: 0,
-    highscore: 0,
+    highScore: 0,
     clickedArray: [],
     message: ""
   }
@@ -27,13 +27,18 @@ class App extends Component {
 
   clickCard = id => {
     const shuffledArr = this.shuffleArray(characters);
-    this.setState({ characters: shuffledArr });
+    console.log(shuffledArr);
+        this.setState({ characters: shuffledArr });
     if (this.state.clickedArray.includes(id)) {
-      this.setState({ score: 0, clickedArray: [], message: "Incorrect!! Game Over :( Click an image to start again."});
+      this.setState({ score: 0, 
+        clickedArray: [], 
+        message: "Incorrect!! Game Over 😫 Click an image to start again."});
     }
     else {
       this.setState({
-        clickedArray: this.state.clickedArray.concat([id]), score: this.state.score + 1, message: "Correct!! :)"
+        clickedArray: this.state.clickedArray.concat([id]), 
+        score: this.state.score + 1, 
+        message: "Correct!! 😊"
       });
     }
 
@@ -48,7 +53,11 @@ class App extends Component {
   render() {
     return (
       <>
-        <Header />
+        <Header 
+          score={this.state.score}
+          highScore={this.state.highScore}
+          message={this.state.message}
+          />
 
         <CardWrapper>
           {characters.map(img => (
@@ -57,6 +66,7 @@ class App extends Component {
               id={img.id}
               key={img.id}
               imglink={img.imglink}
+              clickCard={this.clickCard}
             />
 
           ))}

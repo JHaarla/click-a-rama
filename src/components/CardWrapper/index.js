@@ -1,10 +1,17 @@
 import React from "react";
 import "./cardWrapper.css";
 
-function CardWrapper(props) {
-    return (
+// function CardWrapper(props) {
+//     return (
+//         <div className="card-wrapper">{props.children}</div>
+//     )
+// };
+
+const CardWrapper = (props) => (
+     
         <div className="card-wrapper">{props.children}</div>
-    )
-}
+    
+);
+
 
 export default CardWrapper;
