@@ -3,7 +3,7 @@ import "./footer.css";
 
 function Footer() {
     return (
-        <div className="footer">© 2020 Jarkko Haarla</div>
+        <div className="footer text-center">© 2020 Jarkko Haarla</div>
     )
 };
 
