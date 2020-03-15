@@ -17,6 +17,33 @@ class App extends Component {
     message: ""
   }
 
+  shuffleArray = (shufArr) => {
+    for (let i = shufArr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shufArr[i], shufArr[j]] = [shufArr[j], shufArr[i]];
+  }
+  return shufArr;
+  };
+
+  clickCard = id => {
+    const shuffledArr = this.shuffleArray(characters);
+    this.setState({ characters: shuffledArr });
+    if (this.state.clickedArray.includes(id)) {
+      this.setState({ score: 0, clickedArray: [], message: "Incorrect!! Game Over :( Click an image to start again."});
+    }
+    else {
+      this.setState({
+        clickedArray: this.state.clickedArray.concat([id]), score: this.state.score + 1, message: "Correct!! :)"
+      });
+    }
+
+    // set highscore to score if score> highscore
+    if (this.state.score > this.state.highScore) {
+      this.setState({ highScore: this.state.score });
+    }
+  };
+
+  
 
   render() {
     return (

@@ -34,7 +34,7 @@
   transform: scale(1.05);
 }
 
-/* .img-thumbnail:hover {
+.overlay:hover {
   background-color: green;
   z-index: 2;
-} */
+}
