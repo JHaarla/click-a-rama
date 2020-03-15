@@ -33,3 +33,8 @@
   /* opacity: .5; */
   transform: scale(1.05);
 }
+
+/* .img-thumbnail:hover {
+  background-color: green;
+  z-index: 2;
+} */
