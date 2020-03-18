@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Click-A-Rama/static/css/main.bc010651.chunk.css",
+    "main.js": "/Click-A-Rama/static/js/main.e2f841a8.chunk.js",
+    "main.js.map": "/Click-A-Rama/static/js/main.e2f841a8.chunk.js.map",
+    "runtime-main.js": "/Click-A-Rama/static/js/runtime-main.ae89bc70.js",
+    "runtime-main.js.map": "/Click-A-Rama/static/js/runtime-main.ae89bc70.js.map",
+    "static/js/2.1e42d091.chunk.js": "/Click-A-Rama/static/js/2.1e42d091.chunk.js",
+    "static/js/2.1e42d091.chunk.js.map": "/Click-A-Rama/static/js/2.1e42d091.chunk.js.map",
+    "index.html": "/Click-A-Rama/index.html",
+    "precache-manifest.0a7c073c34a986ddb32970c0011f5894.js": "/Click-A-Rama/precache-manifest.0a7c073c34a986ddb32970c0011f5894.js",
+    "service-worker.js": "/Click-A-Rama/service-worker.js",
+    "static/css/main.bc010651.chunk.css.map": "/Click-A-Rama/static/css/main.bc010651.chunk.css.map",
+    "static/js/2.1e42d091.chunk.js.LICENSE.txt": "/Click-A-Rama/static/js/2.1e42d091.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ae89bc70.js",
+    "static/js/2.1e42d091.chunk.js",
+    "static/css/main.bc010651.chunk.css",
+    "static/js/main.e2f841a8.chunk.js"
+  ]
+}
