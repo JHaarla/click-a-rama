@@ -15,7 +15,7 @@ class App extends Component {
     score: 0,
     highScore: 0,
     clickedArray: [],
-    message: ""
+    message: "Click an image to begin"
   }
 
   shuffleArray = (shufArr) => {
@@ -36,10 +36,12 @@ class App extends Component {
         message: "Incorrect!! Game Over 😫 Click an image to start again."});
     }
     else {
+
       this.setState({
         clickedArray: this.state.clickedArray.concat([id]), 
         score: this.state.score + 1, 
         message: "Correct!! 😊"
+        // highScore: if
       });
     }
 
